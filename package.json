@@ -1,0 +1,23 @@
+{
+  "name": "simple-api",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "main": "nodemon --exec babel-node src/server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "test": "ava"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.4",
+    "ava": "^6.1.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
